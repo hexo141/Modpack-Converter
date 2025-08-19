@@ -3,7 +3,7 @@ import pathlib
 import zipfile
 import os
 import concurrent.futures
-response = requests.get("https://staging-api.modrinth.com/",timeout=20)
+response = requests.get("https://api.modrinth.com/",timeout=20)
 search_pool = []
 if not os.path.exists("temp"):
     os.makedirs("temp")
